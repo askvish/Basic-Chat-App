@@ -13,7 +13,10 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
     @Override
     public void registerStompEndpoints(StompEndpointRegistry registry) {
         // Register the "/ws" endpoint, enabling SockJS fallback options
-        registry.addEndpoint("/ws").setAllowedOriginPatterns("http://localhost:*").withSockJS();
+        registry.addEndpoint("/ws")
+                .setAllowedOriginPatterns("http://localhost:*")
+                .setAllowedOriginPatterns("https://chat-app-by-ashok.web.app/")
+                .withSockJS();
     }
 
     @Override
