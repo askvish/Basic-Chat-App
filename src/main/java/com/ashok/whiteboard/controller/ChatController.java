@@ -23,4 +23,13 @@ public class ChatController {
         message.setContent(message.getSender() + " joined the chat!");
         return message;
     }
+
+    @MessageMapping("/chat.leave")
+    @SendTo("/topic/public")
+    public Message removeUser(@Payload Message message) {
+        // Set message type as LEAVE
+        message.setType(Message.MessageType.LEAVE);
+        message.setContent(message.getSender() + " left the chat!");
+        return message;
+    }
 }
