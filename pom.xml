@@ -9,11 +9,11 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.ashok</groupId>
-    <artifactId>whiteboard-microservice</artifactId>
+    <artifactId>chat-app-microservice</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
-    <name>whiteboard-microservice</name>
-    <description>Microservice for Collaborative Whiteboard</description>
+    <name>chat-app-microservice</name>
+    <description>Microservice for Chat App</description>
     <url/>
     <licenses>
         <license/>
